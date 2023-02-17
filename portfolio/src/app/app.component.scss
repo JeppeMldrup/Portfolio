@@ -5,8 +5,29 @@
         flex: 1 1 auto;
     }
 
-    .header-button{
-        width: fit-content;
+    @media (max-width: 100ch) {
+        .header-button-long{
+            visibility: hidden;
+            margin: 0;
+            border: 0;
+            padding: 0;
+            width: 0%;
+            position: absolute;
+        }
+    }
+
+    @media (min-width: 100ch) {
+        .header-button-long{
+            width: fit-content;
+        }
+
+        .header-button-short{
+            visibility: hidden;
+            margin: 0;
+            border: 0;
+            padding: 0;
+            width: 0%;
+        }
     }
 
     .sep{
