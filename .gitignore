@@ -106,3 +106,4 @@ dist
 portfolio/.vscode/
 portfolio/node_modules/
 portfolio/.angular/
+.vscode/
