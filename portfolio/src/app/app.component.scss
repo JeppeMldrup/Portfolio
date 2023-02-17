@@ -1,0 +1,39 @@
+.header{
+    display: flex;
+
+    .spacer{
+        flex: 1 1 auto;
+    }
+
+    @media (max-width: 100ch) {
+        .header-button-long{
+            visibility: hidden;
+            margin: 0;
+            border: 0;
+            padding: 0;
+            width: 0%;
+            position: absolute;
+        }
+    }
+
+    @media (min-width: 100ch) {
+        .header-button-long{
+            width: fit-content;
+        }
+
+        .header-button-short{
+            visibility: hidden;
+            margin: 0;
+            border: 0;
+            padding: 0;
+            width: 0%;
+        }
+    }
+
+    .sep{
+        border-left: 2px solid;
+        border-color: #cccccc;
+        height: 33%;
+        margin: 1ch;
+    }
+}
