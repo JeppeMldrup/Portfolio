@@ -38,6 +38,28 @@
     }
 }
 
+.divider{
+    margin: 3ch;
+    border-top: 2px solid;
+    border-color: #222222;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    justify-self: center;
+    align-self: center;
+}
+.links{
+    margin-left: 5ch;
+    .link-header{
+        font-size: x-large;
+    }
+    .link{
+        font-size: large;
+        display: block;
+        
+    }
+}
+
 @media (max-width: 55ch) {
     .avatar{
         .name{
