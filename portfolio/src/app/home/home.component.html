@@ -1,16 +1,23 @@
 <div class="avatar">
     <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541" class="picture">
     <div class="rest">
-        <p class="name">Jeppe Volckaerts Møldrup</p>
+        <h1 class="name">Jeppe Volckaerts Møldrup</h1>
         <p class="title">B.Sc. in Computer Science</p>
     </div>
 </div>
 
 <div class="divider"></div>
 
+<p class="link-header">Links:</p>
 <div class="links">
-    <p class="link-header">Links:</p>
-
+    <!--
     <a href="https://www.linkedin.com/in/jeppe-m%C3%B8ldrup-8780b6169/" class="link">Linkedin</a>
     <a href="https://github.com/JeppeMldrup" class="link">Github</a>
+    -->
+
+    <div *ngFor="let link of links">
+        <img src='{{link.image}}' class="link-image">
+        <a href='{{link.link}}' class="link-anchor">{{link.text}}</a>
+    </div>
+
 </div>

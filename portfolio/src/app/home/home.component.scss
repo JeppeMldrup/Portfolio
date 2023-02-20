@@ -1,27 +1,8 @@
-@media (min-width: 100ch) {
-    .avatar{
-        display: flex;
-        .rest{
-            margin-top: 5ch;
-            margin-left: 5ch;
-        }
-    }
-}
-
-@media (max-width: 100ch) {
-    .avatar{
-        display: flexbox;
-        .picture{
-            flex-grow: 1 1 auto;
-        }
-        .rest{
-            margin-top: 2ch;
-        }
-    }
-}
-
 .avatar{
-    padding: 2ch;
+    margin: 6ch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     .picture{
         border-radius: 100%;
         width: 25ch;
@@ -31,7 +12,6 @@
         align-content: center;
     }
     .name{
-        font-size: xx-large;
     }
     .title{
         font-size: medium;
@@ -48,25 +28,14 @@
     justify-self: center;
     align-self: center;
 }
+.link-header{
+    font-size: x-large;
+}
 .links{
     margin-left: 5ch;
-    .link-header{
-        font-size: x-large;
-    }
-    .link{
-        font-size: large;
-        display: block;
-        
-    }
-}
-
-@media (max-width: 55ch) {
-    .avatar{
-        .name{
-            font-size: x-large;
-        }
-        .title{
-            font-size: small;
-        }
+    display: flex;
+    flex-wrap: wrap;
+    .link-image{
+        width: 10ch;
     }
 }
