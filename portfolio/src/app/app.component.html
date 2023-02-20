@@ -1,14 +1,16 @@
 <mat-toolbar class="header">
-    <h1>Portfolio</h1>
-    <span class="spacer"></span>
-    <button mat-stroked-button class="header-button-long" [routerLink]="['/home']">Home</button>
-    <button mat-icon-button class="header-button-short" [routerLink]="['/home']"><mat-icon fontIcon="home"></mat-icon></button>
-    <div class="sep"></div>
-    <button mat-stroked-button class="header-button-long" [routerLink]="['/education']">Education & Experience</button>
-    <button mat-icon-button class="header-button-short" [routerLink]="['/education']"><mat-icon fontIcon="school"></mat-icon></button>
-    <div class="sep"></div>
-    <button mat-stroked-button class="header-button-long" [routerLink]="['/projectlist']">Projects List</button>
-    <button mat-icon-button class="header-button-short" [routerLink]="['/projectlist']"><mat-icon fontIcon="list_alt"></mat-icon></button>
+    <div class="align">
+        <h1 class="header-title">Portfolio</h1>
+        
+        <button mat-stroked-button class="header-button-long" [routerLink]="['/home']">Home</button>
+        <button mat-icon-button class="header-button-short" [routerLink]="['/home']"><mat-icon fontIcon="home"></mat-icon></button>
+        <div class="sep"></div>
+        <button mat-stroked-button class="header-button-long" [routerLink]="['/education']">Education & Experience</button>
+        <button mat-icon-button class="header-button-short" [routerLink]="['/education']"><mat-icon fontIcon="school"></mat-icon></button>
+        <div class="sep"></div>
+        <button mat-stroked-button class="header-button-long" [routerLink]="['/projectlist']">Projects List</button>
+        <button mat-icon-button class="header-button-short" [routerLink]="['/projectlist']"><mat-icon fontIcon="list_alt"></mat-icon></button>
+    </div>
 </mat-toolbar>
 
 <router-outlet></router-outlet>

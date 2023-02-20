@@ -1,8 +1,29 @@
 .header{
+    width: 100%;
     display: flex;
-
-    .spacer{
-        flex: 1 1 auto;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    .align{
+        width: min(100%, 50rem);
+        display: flex;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        height: 100%;
+        justify-content: flex-end;
+        align-items: center;
+        .header-title{
+            margin-right: auto;
+        }
+        .sep{
+            border-left: 2px solid;
+            border-bottom: 10px solid;
+            border-color: #ffffff;
+            height: 33%;
+            margin: 1ch;
+        }
     }
 
     @media (max-width: 80ch) {
@@ -28,12 +49,5 @@
             padding: 0;
             width: 0%;
         }
-    }
-
-    .sep{
-        border-left: 2px solid;
-        border-color: #cccccc;
-        height: 33%;
-        margin: 1ch;
     }
 }
