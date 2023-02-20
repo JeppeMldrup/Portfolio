@@ -10,6 +10,8 @@ import { ProjectlistComponent } from './projectlist/projectlist.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { MatIconModule } from '@angular/material/icon';
     ProjectlistComponent
   ],
   imports: [
+    MatDividerModule,
+    MatCardModule,
     MatIconModule,
     MatButtonModule,
     MatToolbarModule,
