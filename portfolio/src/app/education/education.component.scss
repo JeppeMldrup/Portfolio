@@ -1,18 +1,23 @@
 .flex{
     display: flex;
     justify-content: center;
-    .education-card{
+    .education-card, .employment-card{
         width: min(100%, 50rem);
         .avatar-image{
-            background-image: url('../../../261020_aau-logo/__AAU_LEFT_WHITE_UK.png');
             background-size: cover;
         }
-        .links{
-            display: flex;
-            justify-content: space-between;
-            .link{
-                width: 45%;
-            }
+        .link{
+            margin-top: 16px;
         }
+    }
+}
+
+.divider{
+    margin-top: 16px;
+}
+
+.education-card{
+    .avatar-image{
+        background-image: url('../../../261020_aau-logo/__AAU_LEFT_WHITE_UK.png');
     }
 }
