@@ -3,9 +3,14 @@
 
 .flex{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
     .project-card{
+        animation: slidein .6s ease-in-out;
+        animation-fill-mode: both;
         width: min(100%, 50rem);
+        margin-bottom: 16px;
         .avatar-image{
             background-size: cover;
         }
@@ -29,6 +34,22 @@
         .link{
             margin-top: 16px;
         }
+    }
+}
+
+.flex .project-card:nth-child(1){animation-delay: 0s;}
+.flex .project-card:nth-child(2){animation-delay: .2s;}
+
+@keyframes slidein {
+    from {
+        transform: translateY(+100%);
+        filter: blur(1rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
     }
 }
 
