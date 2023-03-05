@@ -37,8 +37,11 @@
     }
 }
 
-.flex .project-card:nth-child(1){animation-delay: 0s;}
-.flex .project-card:nth-child(2){animation-delay: .2s;}
+@for $i from 1 through 3 {
+    .flex .project-card:nth-child(#{$i}){
+        animation-delay: calc($i*0.2s - 0.2s);
+    }
+}
 
 @keyframes slidein {
     from {
